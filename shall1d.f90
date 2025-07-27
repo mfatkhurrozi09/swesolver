@@ -20,6 +20,9 @@ program sswe1d
   real(8) :: x
   integer :: outf
 
+print *, ' -- SSWE1D --'
+print *, 'Ocean Engineering ITERA - Jul 2025'
+
 ! -- initialization
   do i = 1, nx
      x = (i - 1) * dx
@@ -36,8 +39,7 @@ program sswe1d
      eta(1,n)=0.5*sin(2*3.14/5*n*dt)
 	 !print*, eta(1,n)
 enddo 
-print *, ' -- SSWE1D --'
-print *, 'Ocean Engineering ITERA - Jul 2025'
+
 
   do n = 1, nt-1
   ! Predictor  
